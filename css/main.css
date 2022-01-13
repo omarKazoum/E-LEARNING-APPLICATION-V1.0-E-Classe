@@ -4,8 +4,9 @@
     --color-lighter-gray:rgba(205, 205, 205, 1);
 }
 body {
-    width: 100vw;
-    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    font-size: 20px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--color-lighter-gray);
