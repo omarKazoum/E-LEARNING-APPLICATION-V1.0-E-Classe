@@ -1,0 +1,15 @@
+:root{
+    --color-primar-blue:#00C1FE;
+}
+body {
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    width: 100vw;
+    height: 100vh;
+}
+.card-title{
+    border-width: 5px !important;
+    border-color: var(--color-primar-blue) !important;
+}
+.bg-primary{
+    background-color: var(--color-primar-blue) !important;
+}
