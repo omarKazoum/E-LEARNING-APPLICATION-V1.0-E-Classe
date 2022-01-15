@@ -4,10 +4,13 @@ $(function(){
         $('.sidebar').toggle();
 
         if(hidden) {
-            $(".content").attr("class",$(".content").attr("class")+"col-2 col-md-3");
+            $(".content").removeClass('col-12');
+            $(".content").addClass('col-9');
             $('.btn-toggle-sidebar').css("transform", "rotate(0deg)");
         }else{
             $('.btn-toggle-sidebar').css("transform", "rotate(180deg)");
+            $(".content").removeClass('col-9');
+            $(".content").addClass('col-12');
         }
         hidden=!hidden;
         })

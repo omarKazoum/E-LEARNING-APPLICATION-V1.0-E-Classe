@@ -72,8 +72,8 @@ body {
     background-image: url("../images/ic-settings.svg");
 }
 .ic-log-out{
-    width:1.2rem;
-    height: 0.95rem;
+    width:1.4rem !important;
+    height: 1rem !important;
     background-image: url("../images/ic-log-out.svg");
 }
 .ic-arrow{
