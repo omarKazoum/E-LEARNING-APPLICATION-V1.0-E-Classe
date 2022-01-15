@@ -1,46 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 :root{
-    --color-primar-blue:#00C1FE;
+    --color-primary-blue:#00C1FE;
     --color-lighter-gray:rgba(205, 205, 205, 1);
 }
 body {
-    width: 100vw;
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
     height: 100vh;
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--color-lighter-gray);
-    opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--color-lighter-gray);
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--color-lighter-gray);
-}
-.card-title{
-    border-width: 5px !important;
-    border-color: var(--color-primar-blue) !important;
-}
-.bg-primary{
-    background-color: var(--color-primar-blue) !important;
-}
-.text-gray{
-    color: rgba(108, 108, 108, 1);
-}
-.text-color-primary{
-    color: var(--color-primar-blue) !important;
 }
 .card{
     border-radius: 20px !important;
-}
-.form-group{
-    margin-bottom: 2rem !important;
-}
-.text-underline{
-    text-decoration: underline !important;
-}
-.btn{
-    font-size: 1.2rem;
 }

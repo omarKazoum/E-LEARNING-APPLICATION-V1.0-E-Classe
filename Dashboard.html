@@ -2,27 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main. css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-<main class="container">
+<main class="container-fluid">
     <div class="row">
-        <div class="col-3 sidebar">
+        <div class="toggle col-2 col-md-3 sidebar p-1 p-md-3">
+            <h1 class="text-left border-start border-3 border-md-4 border-primary ps-md-2 fw-bold fs-4 mb-3 mb-md-0">E-classe</h1>
+            <div class="w-100 px-md-5 mx-md-auto d-flex flex-column align-items-center mt-md-5 mb-md-2">
+                <img src="images/dashboard-round-img.png" alt="" class="img-round w-100 h-100 shadow">
+                <h5 class="text-center w-100 mt-3 d-none d-md-block fw-bold">Admin name</h5>
+                <h6 class="text-primary text-bold mt-3 d-none d-md-block">Admin</h6>
+            </div>
+            <div class="menu-options-con row w-100 px-lg-5 mx-auto py-md-5 py-2 mt-3 mt-md-0 ">
+                <a href="#" class="btn gap-2 bg-primary mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="bi bi-house w-25 w-xs-75 me-1 me-md-0"></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                        Home
+                    </p>
+                </a>
+                <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="bi bi-bookmark w-25 me-2 me-md-0 "></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                    Course
+                    </p>
+                </a>
+                <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="bi bi-bookmark w-25 w-xs-75 me-1 me-2 me-md-0 ms-3 ms-md-0 me-md-1" style="transform:scaleX(-1);"></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                    Students
+                    </p>
+                </a>
+                <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="ic ic-payment my-md-0 my-1"></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                        Payment
+                    </p>
+                </a>
+                <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="ic ic-report my-md-0 my-1"></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                        Report
+                    </p>
+                </a>
+                <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                    <span class="ic ic-settings my-md-0 my-1"></span>
+                    <p class="w-75 text-start m-0 d-none d-md-block">
+                        Settings
+                    </p>
+                </a>
+                <a href="#" class="mt-md-5 mt-2 btn gap-0 d-flex justify-content-md-between justify-content-center w-75 align-items-center" >
+                    <p class="w-75 text-start m-0 d-none d-md-block ">
+                        Settings
+                    </p>
+                    <span class="ic ic-log-out ms-3 ps-3"></span>
+                </a>
+
+            </div>
 
         </div>
         <div class="col-9 content">
+            <div class="row">
+                <nav class="col navbar navbar-expand d-flex justify-content-between">
+                    <div class="navbar-brand">
+                        <span class="ic ic-arrow btn-toggle-sidebar"></span>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <form action="#">
+                                <div class="form-group  p-1">
+                                    <input type="search" class="form-control" onclick="this.form.submit();">
+                                    <input class="ic ic-search btn-search">
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <button class="ic ic-notif btn-notif">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
         </div>
-
     </div>
 </main>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
