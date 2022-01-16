@@ -8,21 +8,67 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+form{
+    height: 3rem !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.sidebar{
+    background-color: var(--color-yelow);
+}
+.img-round{
+    border-radius: 50% ;
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+}
+.btn-search{
+    position: relative !important;
+    left:-3rem !important;
+}
+.form-group {
+    display: inline-flex !important;
+    flex-direction: row !important;
+}
 .border-primary{
     border-color:var(--color-primary-blue) !important;
 }
 .text-primary{
     color: var(--color-primary-blue) !important;
 }
+.btn-search{
+    border: 0;
+    left: -2rem !important;
+    position: relative !important;
+}
+.btn-notif{
+    background-color: #0000;
+    border: 0;
+    align-self: center;
+}
+.btn-toggle-sidebar{
+    width:25px !important;
+    height: 25px !important;
+}
+.navbar-brand{
+    align-items: center;
+    display: flex;
+}
+.navbar{
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.navbar-nav{
+    height: 2rem;
+    align-items: center !important;
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--color-lighter-gray);
     opacity: 1; /* Firefox */
 }
-
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: var(--color-lighter-gray);
 }
-
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--color-lighter-gray);
 }
@@ -33,6 +79,18 @@ body {
 .bg-primary{
     background-color: var(--color-primary-blue) !important;
     border-radius: 0.4rem;
+}
+.bg-gray{
+   background-color:  #F8F8F8
+;
+}
+.bg-white{
+    background-color: white;
+}
+.border-bottom-light{
+    border-bottom-color: rgb(229, 229, 229) !important;
+    border-bottom-width:1px !important;
+    border-bottom-style: solid !important;
 }
 .text-gray{
     color: rgba(108, 108, 108, 1);
@@ -92,4 +150,39 @@ body {
 }
 .ic-notif{
     background-image: url("../images/ic-notif.svg");
+}
+.ic-sort{
+    background-origin: content-box;
+    background-image: url("../images/ic-sort.svg");
+    padding-bottom: 0.4rem;
+    padding-top: 0px;
+}
+.ic-edit{
+    background-image: url("../images/ic-edit.svg");
+    width:0.8rem;
+    height: 0.8rem;
+ }
+.ic-delete{
+    width:0.8rem;
+    height: 0.8rem;
+    background-image: url("../images/ic-delete.svg");
+}
+.ic-eye{
+    background-image: url("../images/ic-eye.svg");
+}
+.ic-house{
+    background-image: url('../images/ic-house.svg');
+}
+.ic-course{
+    background-image: url("../images/ic-course.svg");
+}
+.ic-students{
+    background-image: url("../images/ic-students.svg");
+}
+.btn-sort{
+    margin-right: 1rem;
+    width:0.8rem;
+}
+.table-header{
+    font-size: 0.8rem;
 }
