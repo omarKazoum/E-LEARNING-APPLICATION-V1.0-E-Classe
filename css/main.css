@@ -170,7 +170,7 @@ body {
 .ic-eye{
     background-image: url("../images/ic-eye.svg");
 }
-.ic-house{
+.ic-home{
     background-image: url('../images/ic-house.svg');
 }
 .ic-course{
@@ -185,4 +185,7 @@ body {
 }
 .table-header{
     font-size: 0.8rem;
+}
+.sidebar a:hover{
+    background-color:var(--color-primary-blue);
 }
