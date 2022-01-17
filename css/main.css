@@ -47,8 +47,8 @@ body {
     align-self: center;
 }
 .btn-toggle-sidebar{
-    width:25px !important;
-    height: 25px !important;
+    width:50px !important;
+    height: 50px !important;
 }
 .navbar-brand{
     align-items: center;
@@ -108,7 +108,6 @@ body {
     font-size: 1.2rem;
 }
 .ic{
-    background-color: red !important;
     display: inline-block !important;
     box-sizing: content-box;
     background-origin: content-box;
@@ -122,17 +121,18 @@ body {
     background-image: url("../images/ic_payment.svg");
 }
 .ic-report{
-    height: 1.35rem;
-    width: 1rem;
-    overflow: visible;
+    --size:130;
+    height: calc(var(--size)*1rem/100) !important;
+    width: calc(var(--size)*0.76rem/100) !important;
     background-image: url("../images/ic-report.svg");
 }
 .ic-settings{
     background-image: url("../images/ic-settings.svg");
 }
 .ic-log-out{
-    width: 1.3rem;
-    height: 1rem !important;
+    --size:95;
+    height: calc(var(--size)*1rem/100) !important;
+    width: calc(var(--size)*1.3rem/100) !important;
     background-image: url("../images/ic-log-out.svg");
 }
 .ic-arrow{
@@ -140,6 +140,8 @@ body {
     background-origin: content-box;
     background-image: url("../images/ic-arrow.svg");
     padding:0.1rem;
+    width:2rem !important;
+    height: 2rem !important;
 }
 .ic-search{
     box-sizing: border-box;
@@ -176,9 +178,14 @@ body {
 
 }
 .ic-course{
+    width:1rem !important;
+    height: 1.2rem !important;
+
     background-image: url("../images/ic-course.svg");
 }
 .ic-students{
+    width:1.6rem !important;
+    height: 1rem !important;
     background-image: url("../images/ic-students.svg");
 }
 .btn-sort{
