@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Students</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/student.css">
@@ -11,14 +10,14 @@
 <body>
 <main class="container-fluid bg-gray">
     <div class="row">
-        <div class="toggle col-2 col-md-3 sidebar p-1 p-md-3">
+        <div class="toggle col-3 sidebar p-1 p-md-3">
             <h1 class="text-left border-start border-3 border-md-4 border-primary ps-md-2 fw-bold fs-4 mb-3 mb-md-0">E-classe</h1>
             <div class="w-100 px-md-5 mx-md-auto d-flex flex-column align-items-center mt-md-5 mb-md-2">
                 <img src="images/dashboard-round-img.png" alt="" class="img-round w-100 h-100 shadow">
                 <h5 class="text-center w-100 mt-3 d-none d-md-block fw-bold">Admin name</h5>
                 <h6 class="text-primary text-bold mt-3 d-none d-md-block">Admin</h6>
             </div>
-            <div class="menu-options-con row w-100 px-lg-5 mx-auto py-md-5 py-2 mt-3 mt-md-0 ">
+            <div class="menu-options-con row w-100 px-xl-5 px-lg-2  mx-auto py-md-5 py-2 mt-3 mt-md-0">
                 <a href="Dashboard.html" class="btn gap-2 mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="bi bi-house w-25 w-xs-75 me-1 me-md-0"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
@@ -89,51 +88,50 @@
             </div>
             <div class="main-content row p-2 d-flex align-items-center">
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
-                    <h1 class="h4 fw-bold">Students List</h1>
+                    <h1 class="h5 fw-bold">Students List</h1>
                     <div class="toolbar-left-part">
                         <button class="sort ic ic-sort btn btn-sort"></button>
-                        <button class="btn btn-primary fs-6">ADD NEW STUDENT</button>
+                        <button class="btn btn-primary btn-add-students">ADD NEW STUDENT</button>
                     </div>
                 </div>
-            </div>
-            <div class="table-header row mb-2">
-                <span class="offset-1 col-2 text-start">
-                    Name
-                </span>
-                <span class="col-2 text-start">
-                    Email
-                </span>
-                <span class="col-2 text-start">
-                    Phone
-                </span>
-                <span class="col-2 text-start">
-                    Enroll Number
-                </span>
-                <span class="col-3 text-start">
-                    Date of admission
-                </span>
-            </div>
-            <div class="col-12 cards">
+                <div class="table-header row mb-2 d-none d-lg-flex">
+                    <span class="offset-1 col-2 text-start">
+                        Name
+                    </span>
+                    <span class="col-2 text-start">
+                        Email
+                    </span>
+                    <span class="col-2 text-start">
+                        Phone
+                    </span>
+                    <span class="col-2 text-start">
+                        Enroll Number
+                    </span>
+                    <span class="col-3 text-start">
+                        Date of admission
+                    </span>
+                </div>
+                <div class="row col-12 cards">
                 <div class="col-12">
                     <div class="card shadow">
-                        <div class="card-body row">
-                            <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                            <span class="col-2 text-start">
+                        <div class="card-body row d-flex flex-column flex-md-row">
+                            <img src="images/student-img.jfif" alt="" class="card-image col-lg-1">
+                            <span class="col-lg-2 text-start">
                                 username
                             </span>
-                            <span class="col-2 text-start">
+                            <span class="col-lg-2 text-start">
                                 karthi@gmmail.com
                             </span>
-                            <span class="col-2 text-start">
+                            <span class="col-lg-2 text-start">
                                 7305477760
                             </span>
-                            <span class="col-2 text-start">
+                            <span class="col-lg-2 text-start">
                                 1234567305477760
                             </span>
-                            <span class="col-2 text-start">
+                            <span class="col-lg-2 text-start">
                                 08-Dec, 2021s
                             </span>
-                            <span class="col-1 btns">
+                            <span class="col-lg-1 btns">
                                 <button class="ic ic-edit btn btn-edit">
                                 </button>
                                 <button class="ic ic-delete btn btn-delete">
@@ -142,170 +140,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="card shadow">
-                        <div class="card-body row">
-                            <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                            <span class="col-2 text-start">
-                                username
-                            </span>
-                            <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                            <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                            <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                            <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                            <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div><div class="col-12">
-                <div class="card shadow">
-                    <div class="card-body row">
-                        <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                        <span class="col-2 text-start">
-                                username
-                            </span>
-                        <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                        <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                        <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                    </div>
-                </div>
-            </div><div class="col-12">
-                <div class="card shadow">
-                    <div class="card-body row">
-                        <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                        <span class="col-2 text-start">
-                                username
-                            </span>
-                        <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                        <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                        <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                    </div>
-                </div>
-            </div><div class="col-12">
-                <div class="card shadow">
-                    <div class="card-body row">
-                        <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                        <span class="col-2 text-start">
-                                username
-                            </span>
-                        <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                        <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                        <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                    </div>
-                </div>
-            </div><div class="col-12">
-                <div class="card shadow">
-                    <div class="card-body row">
-                        <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                        <span class="col-2 text-start">
-                                username
-                            </span>
-                        <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                        <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                        <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                        <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                    </div>
-                </div>
+
             </div>
-                <div class="col-12">
-                    <div class="card shadow">
-                        <div class="card-body row">
-                            <img src="images/student-img.jfif" alt="" class="card-image col-1">
-                            <span class="col-2 text-start">
-                                username
-                            </span>
-                            <span class="col-2 text-start">
-                                karthi@gmmail.com
-                            </span>
-                            <span class="col-2 text-start">
-                                7305477760
-                            </span>
-                            <span class="col-2 text-start">
-                                1234567305477760
-                            </span>
-                            <span class="col-2 text-start">
-                                08-Dec, 2021s
-                            </span>
-                            <span class="col-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
-                                </button>
-                                <button class="ic ic-delete btn btn-delete">
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
