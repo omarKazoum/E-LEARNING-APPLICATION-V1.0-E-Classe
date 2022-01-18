@@ -20,7 +20,7 @@
                 <h6 class="text-primary text-bold mt-3 d-none d-md-block">Admin</h6>
             </div>
             <div class="menu-options-con row w-100 px-lg-5 mx-auto py-md-5 py-2 mt-3 mt-md-0 ">
-                <a href="Dashboard.html" class="btn gap-2 mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="Dashboard.php" class="btn gap-2 mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-home"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
                         Home
@@ -32,13 +32,13 @@
                         Course
                     </p>
                 </a>
-                <a href="student.html" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="students.php" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-students"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
                         Students
                     </p>
                 </a>
-                <a href="payments.html" class="btn gap-2 bg-primary mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="payments.php" class="btn gap-2 bg-primary mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-payment my-md-0 my-1"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
                         Payment
@@ -56,7 +56,7 @@
                         Settings
                     </p>
                 </a>
-                <a href="login.html" class="mt-md-5 mt-2 btn gap-0 d-flex justify-content-center align-items-center" >
+                <a href="index.php" class="mt-md-5 mt-2 btn gap-0 d-flex justify-content-center align-items-center" >
                     <p class=" text-start m-0 d-none d-md-block ">
                         Logout
                     </p>

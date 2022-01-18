@@ -9,6 +9,7 @@
 </head>
 <body>
 <main class="container-lg w-100 h-100 d-flex justify-content-center align-items-center">
+
     <div class="row w-100">
         <div class="card offset-md-3 col-md-6 shadow">
             <div class="card-body p-5">
@@ -18,7 +19,7 @@
                 <p class="text-center text-gray">
                     Enter your credentials to access your account
                 </p>
-                <form action="./Dashboard.html">
+                <form action="Dashboard.php">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email">

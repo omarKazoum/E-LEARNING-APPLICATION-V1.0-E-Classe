@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Students</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/student.css">
 </head>
 <body>
-<main class="container-fluid">
+<main class="container-fluid bg-gray">
     <div class="row">
         <div class="toggle col-3 sidebar p-1 p-md-3">
             <h1 class="text-left border-start border-3 border-md-4 border-primary ps-md-2 fw-bold fs-4 mb-3 mb-md-0">E-classe</h1>
@@ -19,7 +18,7 @@
                 <h6 class="text-primary text-bold mt-3 d-none d-md-block">Admin</h6>
             </div>
             <div class="menu-options-con row w-100 px-lg-5 mx-auto py-md-5 py-2 mt-3 mt-md-0 ">
-                <a href="Dashboard.html" class="btn gap-2 bg-primary mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="Dashboard.php" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-home"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
                         Home
@@ -28,16 +27,16 @@
                 <a href="#" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-course"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
-                    Course
+                        Course
                     </p>
                 </a>
-                <a href="student.html" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="students.php" class="btn gap-2  mb-4 d-flex bg-primary justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-students"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
-                    Students
+                        Students
                     </p>
                 </a>
-                <a href="payments.html" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
+                <a href="payments.php" class="btn gap-2  mb-4 d-flex justify-content-md-between justify-content-center w-100 align-items-center">
                     <span class="ic ic-payment my-md-0 my-1"></span>
                     <p class="w-75 text-start m-0 d-none d-md-block">
                         Payment
@@ -55,7 +54,7 @@
                         Settings
                     </p>
                 </a>
-                <a href="login.html" class="mt-md-5 mt-2 btn gap-0 d-flex justify-content-center align-items-center" >
+                <a href="index.php" class="mt-md-5 mt-2 btn gap-0 d-flex justify-content-center align-items-center" >
                     <p class=" text-start m-0 d-none d-md-block ">
                         Logout
                     </p>
@@ -66,7 +65,7 @@
 
         </div>
         <div class="col content">
-            <div class="row navigation-bar-top">
+            <div class="row navigation-bar-top bg-white">
                 <nav class="col navbar navbar-expand d-flex justify-content-between">
                     <div class="navbar-brand">
                         <span class="ic ic-arrow btn-toggle-sidebar"></span>
@@ -88,71 +87,62 @@
                 </nav>
             </div>
             <div class="main-content row p-2 d-flex align-items-center">
-                <article class="col-12 col-md-6 col-lg-3 pb-1">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column card-students">
-                            <img src="images/ic-big-students.svg" alt="" class="card-image w-50">
-                            <p class="card-text">
-                                Students
-                            </p>
-                            <h2 class="card-title align-self-end h1">
-                                243
-                            </h2>
-
-                        </div>
-
+                <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
+                    <h1 class="h5 fw-bold">Students List</h1>
+                    <div class="toolbar-left-part">
+                        <button class="sort ic ic-sort btn btn-sort"></button>
+                        <button class="btn btn-primary btn-add-students">ADD NEW STUDENT</button>
                     </div>
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 pb-1">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column card-course">
-                            <img src="images/ic-big-course.svg" alt="" class="card-image w-50">
-                            <p class="card-text">
-                                Course
-                            </p>
-                            <h2 class="card-title align-self-end h1">
-                                13
-                            </h2>
-
+                </div>
+                <div class="table-header row mb-2 d-none d-lg-flex">
+                    <span class="offset-1 col-2 text-start">
+                        Name
+                    </span>
+                    <span class="col-2 text-start">
+                        Email
+                    </span>
+                    <span class="col-2 text-start">
+                        Phone
+                    </span>
+                    <span class="col-2 text-start">
+                        Enroll Number
+                    </span>
+                    <span class="col-3 text-start">
+                        Date of admission
+                    </span>
+                </div>
+                <div class="row col-12 cards">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="card-body row d-flex flex-column flex-md-row">
+                            <img src="images/student-img.jfif" alt="" class="card-image col-lg-1">
+                            <span class="col-lg-2 text-start">
+                                username
+                            </span>
+                            <span class="col-lg-2 text-start">
+                                karthi@gmmail.com
+                            </span>
+                            <span class="col-lg-2 text-start">
+                                7305477760
+                            </span>
+                            <span class="col-lg-2 text-start">
+                                1234567305477760
+                            </span>
+                            <span class="col-lg-2 text-start">
+                                08-Dec, 2021s
+                            </span>
+                            <span class="col-lg-1 btns">
+                                <button class="ic ic-edit btn btn-edit">
+                                </button>
+                                <button class="ic ic-delete btn btn-delete">
+                                </button>
+                            </span>
                         </div>
-
                     </div>
+                </div>
 
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 pb-1">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column card-payments">
-                            <img src="images/ic-big-payments.svg" alt="" class="card-image w-50">
-                            <p class="card-text">
-                                Payments
-                            </p>
-                            <h2 class="card-title align-self-end h1">
-                                DHS 556,000
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 pb-1">
-                    <div class="card">
-                        <div class="card-body d-flex flex-column card-users">
-                            <img src="images/ic-big-users.svg" alt="" class="card-image w-50">
-                            <p class="card-text">
-                                Users
-                            </p>
-                            <h2 class="card-title align-self-end h1">
-                                3
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                </article>
             </div>
-
+            </div>
         </div>
     </div>
 </main>
