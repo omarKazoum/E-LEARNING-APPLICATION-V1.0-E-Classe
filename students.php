@@ -39,24 +39,37 @@
                     </span>
                 </div>
                 <div class="row col-12 cards">
-                <div class="col-12">
+                    <?php
+                    // let's fill the array with the students data
+                    for($i=1;$i<=10;$i++)
+                    $students[]=array(
+                        'name'=>'name '.$i,
+                        'email'=>'name'.$i.'@domain.ext',
+                        'phone'=>'212677886655',
+                        'enrolNbr'=>1000+$i,
+                        'dateAdmission'=>$i.'-Dec, 2021s'
+                    );
+                    // now let's print the data
+                    foreach($students as $student){
+                    ?>
+                    <div class="col-12">
                     <div class="card shadow">
                         <div class="card-body row d-flex flex-column flex-md-row">
                             <img src="images/student-img.jfif" alt="" class="card-image col-lg-1">
                             <span class="col-lg-2 text-start">
-                                username
+                                <?php echo $student['name'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                karthi@gmmail.com
+                                <?php echo $student['email'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                7305477760
+                                <?php echo $student['phone'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                1234567305477760
+                                <?php echo $student['enrolNbr'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                08-Dec, 2021s
+                                <?php echo $student['dateAdmission'];?>
                             </span>
                             <span class="col-lg-1 btns">
                                 <button class="ic ic-edit btn btn-edit">
@@ -67,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+                    <?php }?>
 
             </div>
             </div>

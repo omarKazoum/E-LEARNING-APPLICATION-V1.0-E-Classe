@@ -19,7 +19,7 @@
                 <p class="text-center text-gray">
                     Enter your credentials to access your account
                 </p>
-                <form action="Dashboard.php">
+                <form action="Dashboard.php" method="POST">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email">
