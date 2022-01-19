@@ -44,9 +44,9 @@
             </div>
             <div class="col-12 cards">
                 <?php
-                // let's fill the array with the students data
+                // let's fill the array with the payments data
                 for($i=1;$i<=10;$i++)
-                    $students[]=array(
+                    $payments[]=array(
                         'name'=>'name '.$i,
                         'paymentSchudule'=>$i.($i==1?'st':($i==2?'nd':($i==3?'rd':'th'))),
                         'billNumber'=>$i+10000,
@@ -55,28 +55,28 @@
                         'date'=>$i.'-Dec, 2021s'
                     );
                 // now let's print the data
-                foreach($students as $student){
+                foreach($payments as $payment){
                 ?>
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body row d-flex flex-column flex-lg-row">
                             <span class="col-lg-1 text-start">
-                                <?php echo $student['name'];?>
+                                <?php echo $payment['name'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                               <?php echo $student['paymentSchudule'];?>
+                               <?php echo $payment['paymentSchudule'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                <?php echo $student['billNumber'];?>
+                                <?php echo $payment['billNumber'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                <?php echo 'DHS '.$student['amountPaid'];?>
+                                <?php echo 'DHS '.$payment['amountPaid'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                <?php echo 'DHS '.$student['balanceAmount'];?>
+                                <?php echo 'DHS '.$payment['balanceAmount'];?>
                             </span>
                             <span class="col-lg-2 text-start">
-                                 <?php echo $student['date'];?>
+                                 <?php echo $payment['date'];?>
                             </span>
                             <span class="col-lg-1 btns">
                                 <button class="ic ic-eye btn btn-details">
