@@ -42,6 +42,5 @@
 </main>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+<?php include 'footer.php'?></body>
 </html>

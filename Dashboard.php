@@ -13,7 +13,7 @@
     <div class="row">
         <?php include 'sidebar.php';?>
         <div class="col content">
-            <?php include 'nav-bar.php';?>
+            <?php include 'header.php';?>
             <div class="main-content row p-2 d-flex align-items-center">
                 <article class="col-12 col-md-6 col-lg-3 pb-1">
                     <div class="card">
@@ -79,15 +79,9 @@
 
                 </article>
             </div>
-
         </div>
     </div>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<?php include 'footer.php'?>
 </body>
 </html>
