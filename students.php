@@ -11,7 +11,7 @@
 <main class="container-fluid bg-gray">
     <div class="row">
         <?php include 'sidebar.php';?>
-        <div class="col-9 content">
+        <div class="col content">
             <?php include 'header.php';?>
             <div class="main-content row p-2 d-flex align-items-center">
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
