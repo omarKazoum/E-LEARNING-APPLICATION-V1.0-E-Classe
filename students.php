@@ -17,8 +17,8 @@
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
                     <h1 class="h5 fw-bold">Students List</h1>
                     <div class="toolbar-left-part">
-                        <button class="sort ic ic-sort btn btn-sort"></button>
-                        <button class="btn btn-primary btn-add-students">ADD NEW STUDENT</button>
+                        <button class="sort ic ic-sort btn btn-sort" title="sort button"></button>
+                        <button class="btn btn-primary btn-add-students" title="add student button">ADD NEW STUDENT</button>
                     </div>
                 </div>
                 <div class="table-header row mb-2 d-none d-lg-flex">
@@ -73,9 +73,9 @@
                                 <?php echo $student['dateAdmission'];?>
                             </span>
                             <span class="col-lg-1 btns">
-                                <button class="ic ic-edit btn btn-edit">
+                                <button class="ic ic-edit btn btn-edit" title="edit button">
                                 </button>
-                                <button class="ic ic-delete btn btn-delete">
+                                <button class="ic ic-delete btn btn-delete" title="delete button">
                                 </button>
                             </span>
                         </div>

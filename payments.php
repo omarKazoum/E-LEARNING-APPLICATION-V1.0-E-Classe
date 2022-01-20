@@ -18,12 +18,12 @@
                 <div class="col-12 main-content-toolbar d-flex pb-2 justify-content-between align-items-center border-bottom-light">
                     <h1 class="h4 fw-bold">Payment Details</h1>
                     <div class="toolbar-left-part">
-                        <button class="sort ic ic-sort btn btn-sort"></button>
+                        <button class="sort ic ic-sort btn btn-sort" title="sort button"></button>
                     </div>
                 </div>
             </div>
             <div class="table-header d-none d-lg-flex row mb-2 ps-2">
-                <span class="col-1 text-start ps-2">
+                <span class="col-1 text-start ps-3">
                     Name
                 </span>
                 <span class="col-2 text-start">
@@ -79,7 +79,7 @@
                                  <?php echo $payment['date'];?>
                             </span>
                             <span class="col-lg-1 btns">
-                                <button class="ic ic-eye btn btn-details">
+                                <button class="ic ic-eye btn btn-details" title="details button">
                                 </button>
                             </span>
                         </div>

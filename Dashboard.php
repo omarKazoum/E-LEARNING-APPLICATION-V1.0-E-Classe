@@ -66,7 +66,7 @@
                     <div class="card">
                         <div class="card-body d-flex flex-column card-users">
                             <img src="images/ic-big-users.svg" alt="" class="card-image w-50">
-                            <p class="card-text">
+                            <p class="card-text" style="color:white">
                                 Users
                             </p>
                             <h2 class="card-title align-self-end h1">
