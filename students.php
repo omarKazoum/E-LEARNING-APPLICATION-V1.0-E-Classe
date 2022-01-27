@@ -54,8 +54,8 @@
                     <div class="col-12">
                     <div class="card shadow">
                         <div class="card-body d-flex flex-column flex-md-row">
-                            <span class="col-lg-1 col-auto">
-                                <img src="images/student-img.jfif" alt="" class="w-100">
+                            <span class="col-lg-1 col-auto d-flex align-items-center justify-content-center">
+                                <img src="images/student-img.jfif" alt="" class="w-50">
                             </span>
                             <span class="col-lg-2 text-start">
                                 <?php echo $student['name'];?>
